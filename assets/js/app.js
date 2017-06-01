@@ -20,7 +20,7 @@ $(".search").on("click", function (event) {
         method: "GET"
     }).done(function (response) {
             console.log(response);
-            var results = response.data;
+            var results = response.docs;
 
             for (var i = 0; i < numRecords; i++) {
                 var articleDiv = $("<div class='article'>");
