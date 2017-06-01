@@ -33,7 +33,7 @@ $(".search").on("click", function (event) {
 //                 result.attr("data-summary", response.docs[i].data.lead_paragraph);
 //                 result.attr("data-date", response.docs[i].data.pub_date);
 //                 result.attr("data-url", response.docs[i].data.web_url);
-                articleDiv.text(response.docs[i].data.headline.main);
+                articleDiv.text(response.docs[i].headline.main);
 
                 $("#top-articles").prepend(articleDiv);
             }
