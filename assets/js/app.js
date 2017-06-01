@@ -29,11 +29,11 @@ $(".search").on("click", function (event) {
                 // articleDiv.prepend();
                 // articleDiv.prepend();
 
-                result.attr("data-headline", response.docs[i].data.headline.main);
-                result.attr("data-summary", response.docs[i].data.lead_paragraph);
-                result.attr("data-date", response.docs[i].data.pub_date);
-                result.attr("data-url", response.docs[i].data.web_url);
-
+//                 result.attr("data-headline", response.docs[i].data.headline.main);
+//                 result.attr("data-summary", response.docs[i].data.lead_paragraph);
+//                 result.attr("data-date", response.docs[i].data.pub_date);
+//                 result.attr("data-url", response.docs[i].data.web_url);
+                articleDiv.text(response.docs[i].data.headline.main);
 
                 $("#top-articles").prepend(articleDiv);
             }
