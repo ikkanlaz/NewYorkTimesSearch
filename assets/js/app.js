@@ -4,8 +4,8 @@ $(".search").on("click", function (event) {
     //Deen CODE ----
 
 
-    var beginYear = $("#begin-year").val();
-    var endYear = $("#end-year").val();
+    var beginYear = $("#begin-year").val() + "0101";
+    var endYear = $("#end-year").val() + "1231";
     var numRecords = parseInt($("#num-records").val());
     var searchTerm = $("#search-field").val();
 
@@ -13,7 +13,7 @@ $(".search").on("click", function (event) {
     //we need to make sure that if begin-year and end-year are not specififed then we pass empty strings
 
 
-    var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + searchTerm + "&begin_date=" + beginYear + "&end_date=" + endYear + "api-key=0a4b3bbd873f41d6a3ab2ee4183e0cd5";
+    var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + searchTerm + "&begin_date=" + beginYear + "&end_date=" + endYear + "&api-key=0a4b3bbd873f41d6a3ab2ee4183e0cd5";
 
     $.ajax({
         url: queryURL,
