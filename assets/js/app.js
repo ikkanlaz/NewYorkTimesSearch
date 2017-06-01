@@ -1,5 +1,5 @@
 
-$("search-button").on("click", function (event) {
+$(".search").on("click", function (event) {
     //   event.preventDefault();
     //Deen CODE ----
 
@@ -41,7 +41,7 @@ $("search-button").on("click", function (event) {
         });
 }
                      
-$("clear-button").on("click", function () {
+$(".clearResults").on("click", function () {
 
         $("#top-articles").empty();
 
