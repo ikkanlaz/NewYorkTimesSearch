@@ -19,7 +19,7 @@ $(".search").on("click", function (event) {
         url: queryURL,
         method: "GET"
     }).done(function (response) {
-            console.log(response);
+            console.log(response.docs);
             var results = response.docs;
 
             for (var i = 0; i < numRecords; i++) {
