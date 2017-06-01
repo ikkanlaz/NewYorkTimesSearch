@@ -18,9 +18,8 @@ $(".search").on("click", function (event) {
     $.ajax({
         url: queryURL,
         method: "GET"
-    })
-        .done(function (response) {
-
+    }).done(function (response) {
+            console.log(response);
             var results = response.data;
 
             for (var i = 0; i < numRecords; i++) {
@@ -45,11 +44,11 @@ $(".clearResults").on("click", function () {
 
         $("#top-articles").empty();
 
-    }
+    });
 
 //Joyce code brainstorm: yes to above
                       
-                      $").click(function(event) {
-  														event.preventDefault();
+//                       $").click(function(event) {
+//   														event.preventDefault();
 
 
