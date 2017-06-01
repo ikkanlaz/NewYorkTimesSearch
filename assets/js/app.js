@@ -18,9 +18,9 @@ $(".search").on("click", function (event) {
     $.ajax({
         url: queryURL,
         method: "GET"
-    }).done(function (response) {
-            console.log(response.docs);
-            var results = response.docs;
+    }).done(function (val) {
+            console.log(val.response.docs);
+            var results = val.response.docs;
 
             for (var i = 0; i < numRecords; i++) {
                 var articleDiv = $("<div class='article'>");
