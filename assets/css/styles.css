@@ -1,0 +1,18 @@
+.panel-heading-dark {
+    background-color: #050338;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.panel {
+    border: 1px solid #050338;
+}
+
+.heading {
+    background-color: #050338;
+    padding: 50px 0;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 5px;
+}
+

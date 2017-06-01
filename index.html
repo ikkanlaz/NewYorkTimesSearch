@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>New York Times Search</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/e7dbc74c23.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading"><i class="fa fa-newspaper-o fa-3" aria-hidden="true"></i> New York Times Search</h1>
+        <form class="panel">
+
+            <div class="panel-heading panel-heading-dark"><i class="fa fa-search" aria-hidden="true"></i>Search Parameters</div>
+            <div class="panel-body">
+                <ul>
+                    <li class="form-group">
+                        <label for="name">Search Term:</label><br>
+                        <input type="text" id="search-term" name="name" placeholder="cuperman" required="required" class="form-control">
+                    </li>
+                    <li class="form-group">
+                        <label for="Number">Number of Records to Retrive:</label><br>
+                        <input type="number" id="num-records" name="number" placeholder="" min="1" max="100" required="required" class="form-control">
+                    </li>
+                    <li class="form-group">
+                        <label for="Start year">Start year (Option):</label><br>
+
+                        <input type="number" name="1900" placeholder="" min="1900" max="2017" required="required" class="form-control">
+                    </li>
+                    <li class="form-group">
+                        <label for="End year">End year (Option):</label><br>
+                        <input type="number" name="2017" placeholder="" min="1900" max="2017" required="required" pattern = "[0-9]{4}" class="form-control">
+                    </li>
+                </ul>
+                <button class="btn search"><i class="fa fa-search" aria-hidden="true"></i>Search</button>
+                <button class="btn clearResults"><i class="fa fa-trash-o" aria-hidden="true"></i>Clear Results</button>
+
+
+
+            </div>
+        </form>
+        <section class="panel">
+            <div class="panel-heading panel-heading-dark"><i class="fa fa-calendar" aria-hidden="true"></i>Top Articles</div>
+            <div class="panel-body">
+
+            </div>
+        </section>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
