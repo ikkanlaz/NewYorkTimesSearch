@@ -38,7 +38,7 @@ $(".search").on("click", function (event) {
                 $("#top-articles").prepend(articleDiv);
             }
         });
-}
+});
                      
 $(".clearResults").on("click", function () {
 
