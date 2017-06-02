@@ -27,3 +27,8 @@
     border-radius: 5px;
     margin-right: 10px;
 }
+
+.article__headline {
+    font-weight: bold;
+    font-size: 16px;
+}
