@@ -51,7 +51,7 @@ $(".search").on("click", function (event) {
 //                 result.attr("data-date", response.docs[i].data.pub_date);
 //                 result.attr("data-url", response.docs[i].data.web_url);
                 articleDiv.append(num);
-                articleDiv.append(headline);
+                articleDiv.append(headLine);
                 articleDiv.append(summary);
                 articleDiv.append(pubDate);
                 articleDiv.append(url);
