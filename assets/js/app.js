@@ -29,16 +29,16 @@ $(".search").on("click", function (event) {
                 num.text(i+1);
                    
                 var headline = $("<p class='article__headline'>");
-                headine.text(results[i].headline.main);
+                headine.text(val.response.docs[i].headline.main);
                 
                 var summary = $("<p class='article__summary'>");
-                summary.text(results[i].snippet);
+                summary.text(val.response.docs[i].snippet);
                    
                 var pubDate = $("<p class='article__date'>");
-                pubDate.text(results[i].pub_date);
+                pubDate.text(val.response.docs[i].pub_date);
                    
                 var url = $("<a class='article__url'>");
-                url.attr("href", results[i].web_url);
+                url.attr("href", val.response.docs[i].web_url);
                    
                 
 
