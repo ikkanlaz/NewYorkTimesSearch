@@ -20,6 +20,10 @@
     padding-right: 5px;
 }
 
+.article {
+    margin-bottom: 10px;
+}
+
 .article__number {
     color: #ffffff;
     background-color: #050338;
