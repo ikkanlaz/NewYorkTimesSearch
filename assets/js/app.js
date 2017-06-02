@@ -54,7 +54,7 @@ $(".search").on("click", function (event) {
                 articleDiv.append(headline);
                 articleDiv.append(summary);
                 articleDiv.append(pubDate);
-                   
+                articleDiv.append(url);
 
                 $("#top-articles").prepend(articleDiv);
             }
