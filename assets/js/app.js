@@ -28,8 +28,8 @@ $(".search").on("click", function (event) {
                 var num = $("<p class='article__number'>");
                 num.text(i+1);
                    
-                var headline = $("<p class='article__headline'>");
-                headine.text(val.response.docs[i].headline.main);
+                var headLine = $("<p class='article__headline'>");
+                headLine.text(val.response.docs[i].headline.main);
                 
                 var summary = $("<p class='article__summary'>");
                 summary.text(val.response.docs[i].snippet);
