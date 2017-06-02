@@ -56,7 +56,7 @@ $(".search").on("click", function (event) {
                 articleDiv.append(pubDate);
                 articleDiv.append(url);
 
-                $("#top-articles").prepend(articleDiv);
+                $("#top-articles").append(articleDiv);
             }
         });
 });
