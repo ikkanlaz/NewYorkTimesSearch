@@ -20,3 +20,8 @@
     padding-right: 5px;
 }
 
+.article__number {
+    color: #ffffff;
+    background-color: #050338;
+    padding: 5px;
+}
