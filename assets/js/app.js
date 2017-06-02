@@ -22,8 +22,22 @@ $(".search").on("click", function (event) {
             console.log(val.response.docs);
             var results = val.response.docs;
 
-            for (var i = 0; i < numRecords; i++) {
+            for (var i = 0; i < results.length; i++) {
                 var articleDiv = $("<div class='article'>");
+                   
+                var num = $("<p class='article__number'>");
+                num.text(i+1);
+                   
+                var headline = $("<p class='article__headline'>");
+                headine.text(results[i].headline.main);
+                
+                var summary = $("<p class='article__summary'>");
+                summary.text(results[i].snippet);
+                   
+                var pubDate = $("<p class='article__date'>");
+                pubDate.text(results[i].pub_date);
+                   
+                
 
                 // where we prepend items in the div, I think we need to go through the response object items and push them t
                 // articleDiv.prepend();
@@ -33,7 +47,11 @@ $(".search").on("click", function (event) {
 //                 result.attr("data-summary", response.docs[i].data.lead_paragraph);
 //                 result.attr("data-date", response.docs[i].data.pub_date);
 //                 result.attr("data-url", response.docs[i].data.web_url);
-                articleDiv.text(val.response.docs[i].headline.main);
+                articleDiv.append(num);
+                articleDiv.append(headline);
+                articleDiv.append(summary);
+                articleDiv.append(pubDate);
+                   
 
                 $("#top-articles").prepend(articleDiv);
             }
