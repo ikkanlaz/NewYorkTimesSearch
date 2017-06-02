@@ -39,6 +39,7 @@ $(".search").on("click", function (event) {
                    
                 var url = $("<a class='article__url'>");
                 url.attr("href", val.response.docs[i].web_url);
+                url.text(val.response.docs[i].web_url);
                    
                 
 
