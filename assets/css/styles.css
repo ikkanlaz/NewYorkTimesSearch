@@ -21,7 +21,9 @@
 }
 
 .article {
-    margin-bottom: 10px;
+    background-color: #cccccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
 }
 
 .article__number {
