@@ -37,6 +37,9 @@ $(".search").on("click", function (event) {
                 var pubDate = $("<p class='article__date'>");
                 pubDate.text(results[i].pub_date);
                    
+                var url = $("<a class='article__url'>");
+                url.attr("href", results[i].web_url);
+                   
                 
 
                 // where we prepend items in the div, I think we need to go through the response object items and push them t
