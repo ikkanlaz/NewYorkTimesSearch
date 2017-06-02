@@ -25,7 +25,7 @@ $(".search").on("click", function (event) {
             for (var i = 0; i < results.length; i++) {
                 var articleDiv = $("<div class='article'>");
                    
-                var num = $("<p class='article__number'>");
+                var num = $("<span class='article__number'>");
                 num.text(i+1);
                    
                 var headLine = $("<p class='article__headline'>");
@@ -51,7 +51,7 @@ $(".search").on("click", function (event) {
 //                 result.attr("data-summary", response.docs[i].data.lead_paragraph);
 //                 result.attr("data-date", response.docs[i].data.pub_date);
 //                 result.attr("data-url", response.docs[i].data.web_url);
-                articleDiv.append(num);
+                headLine.append(num);
                 articleDiv.append(headLine);
                 articleDiv.append(summary);
                 articleDiv.append(pubDate);
